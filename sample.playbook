@@ -1,0 +1,19 @@
+- hosts: grp1
+  become: yes
+  tasks:
+       - name: task1
+         debug:
+            msg: "task1 is executed"
+         tags: tag1
+       - name: task2
+         debug:
+            msg: "task2 is executed"
+         tags: tag2
+       - name: task3
+         debug:
+            msg: "task3 is executed"
+         tags: tag3         
+       - name: task4
+         debug:
+            msg: "task4 is executed"
+         tags: tag4
